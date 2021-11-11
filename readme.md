@@ -34,10 +34,10 @@ There are three strategies to use web components built with Stencil.
 ## Feedback
 
 If you have found a bug or have another issue with the library —
-please [create an issue][new-issue].
+please [create an issue](https://github.com/vinhnghi223/ui-percentage-bar/issues).
 
 If you have a question regarding the library or it's integration with your project —
-consider asking a question at [StackOverflow][so-ask].
+consider asking a question at [StackOverflow](https://stackoverflow.com/).
 
 Have any ideas or propositions? Feel free to develop it further. See Developer guide below.
 
