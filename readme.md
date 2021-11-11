@@ -68,6 +68,6 @@ npm test
 
 ## Support
 
-If you like this library consider to add star on [GitHub repository][repo-gh].
+If you like this library consider to add star on [GitHub repository](https://github.com/vinhnghi223/ui-percentage-bar).
 
 Thank you!
