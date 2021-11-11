@@ -5,19 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/ui-percentage-bar.esm.js"></script>
-    <script nomodule src="/build/ui-percentage-bar.js"></script>
+    <script type="module" src="build/ui-percentage-bar.esm.js"></script>
+    <script nomodule src="build/ui-percentage-bar.js"></script>
   </head>
   <body>
-    <ui-percentage-bar name="percentageBar"></percentage-bar>
+    <h1>example 1: payment</h1>
+    <ui-percentage-bar name="payment"></ui-percentage-bar>
+    <br><br><br>
+
+    <h1>example 2: labour force by occupation</h1>
+    <ui-percentage-bar name="occupation"></ui-percentage-bar>
+    <br><br><br>
+
+    <h1>example 3: how do you rate this course</h1>
+    <ui-percentage-bar name="course"></ui-percentage-bar>
   </body>
     <script>
-      var percentageBar = document.getElementsByName('percentageBar')[0]
-      var data = [
+      var paymentBar = document.getElementsByName('payment')[0]
+      var occupationBar = document.getElementsByName('occupation')[0]
+      var courseBar = document.getElementsByName('course')[0]
+
+      var paymentData = [
         {label: 'instalment', percentage: '94.49', value: 1172.91, color: '#00005e'},
         {label: 'interest', percentage: '3.98', value: 49.36, color: '#3399FF'},
         {label: 'fees', percentage: '1.53', value: 19, color: '#704CBF'}
       ]
-      percentageBar.data = data
+      var occupationData = [
+        {label: 'agriculture', percentage: '50', value: 50000, color: 'blue'},
+        {label: 'services', percentage: '30', value: 30000, color: 'green'},
+        {label: 'industry', percentage: '20', value: 20000, color: 'red'}
+      ]
+
+      var courseData = [
+        {label: 'very bad', percentage: '10', value: 50000, color: 'red'},
+        {label: 'bad', percentage: '40', value: 30000, color: 'violet'},
+        {label: 'neutral', percentage: '20', value: 20000, color: 'blue'},
+        {label: 'good', percentage: '30', value: 20000, color: 'green'}
+      ]
+
+
+      paymentBar.data = paymentData
+      occupationBar.data = occupationData
+      courseBar.data = courseData
+
     </script>
 </html>

@@ -1,9 +1,38 @@
-<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <link rel="modulepreload" href="/build/p-612acc71.js"><script type="module" src="/build/p-612acc71.js" data-stencil data-resources-url="/build/" data-stencil-namespace="ui-percentage-bar"></script> <script nomodule="" src="/build/ui-percentage-bar.js" data-stencil></script> </head> <body> <ui-percentage-bar name="percentageBar"> <script>
-      var percentageBar = document.getElementsByName('percentageBar')[0]
-      var data = [
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <script type="module" src="build/ui-percentage-bar.esm.js"></script> <script nomodule="" src="build/ui-percentage-bar.js"></script> </head> <body> <h1>example 1: payment</h1> <ui-percentage-bar name="payment"></ui-percentage-bar> <br><br><br> <h1>example 2: labour force by occupation</h1> <ui-percentage-bar name="occupation"></ui-percentage-bar> <br><br><br> <h1>example 3: how do you rate this course</h1> <ui-percentage-bar name="course"></ui-percentage-bar> <script>
+      var paymentBar = document.getElementsByName('payment')[0]
+      var occupationBar = document.getElementsByName('occupation')[0]
+      var courseBar = document.getElementsByName('course')[0]
+
+      var paymentData = [
         {label: 'instalment', percentage: '94.49', value: 1172.91, color: '#00005e'},
         {label: 'interest', percentage: '3.98', value: 49.36, color: '#3399FF'},
         {label: 'fees', percentage: '1.53', value: 19, color: '#704CBF'}
       ]
-      percentageBar.data = data
-    </script> </ui-percentage-bar></body></html>
+      var occupationData = [
+        {label: 'agriculture', percentage: '50', value: 50000, color: 'blue'},
+        {label: 'services', percentage: '30', value: 30000, color: 'green'},
+        {label: 'industry', percentage: '20', value: 20000, color: 'red'}
+      ]
+
+      var courseData = [
+        {label: 'very bad', percentage: '10', value: 50000, color: 'red'},
+        {label: 'bad', percentage: '40', value: 30000, color: 'violet'},
+        {label: 'neutral', percentage: '20', value: 20000, color: 'blue'},
+        {label: 'good', percentage: '30', value: 20000, color: 'green'}
+      ]
+
+
+      paymentBar.data = paymentData
+      occupationBar.data = occupationData
+      courseBar.data = courseData
+
+    </script> <script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+  if (registration) {
+    registration.unregister().then(function() { location.reload(true) });
+  }
+  });
+}
+</script></body></html>
