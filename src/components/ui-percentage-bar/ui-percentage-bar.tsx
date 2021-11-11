@@ -6,7 +6,7 @@ import { GraphElem } from '../../global/model';
   styleUrl: 'ui-percentage-bar.scss',
   shadow: true
 })
-export class MyComponent {
+export class UiPercentageBar {
 
   private graphData
   @Prop() data: GraphElem[];
