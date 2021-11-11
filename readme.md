@@ -2,24 +2,12 @@
 [![npm version](https://badge.fury.io/js/ui-percentage-bar.svg)](https://www.npmjs.com/package/ui-percentage-bar)
 # ui-percentage-bar
 
-## Development notes
-```bash
-npm install
-npm start // run development server serving src/index.html, built component
-```
-
-To build the component for production, run:
-
-```bash
-npm run build
-```
-
-To run the unit tests for the components, run:
-
-```bash
-npm test
-```
 [`Demo`](https://vinhnghi223.github.io/ui-percentage-bar/)
+
+Since this is a web component, you can just use directly in your HTML like
+[`this`](https://github.com/vinhnghi223/ui-percentage-bar/blob/master/src/index.html)
+### Screenshots
+![](https://raw.githubusercontent.com/vinhnghi223/ui-percentage-bar/master/sceenshot.png)
 ## Using this component
 
 There are three strategies I recommend for using web components built with Stencil.
@@ -38,3 +26,21 @@ There are three strategies I recommend for using web components built with Stenc
 - Run `npm install ui-percentage-bar --save`
 - Add an import to the npm packages `import ui-percentage-bar;`
 - Then you can use the element anywhere in your template, JSX, html etc
+
+## Development notes
+```bash
+npm install
+npm start // run development server serving src/index.html, built component
+```
+
+To build the component for production, run:
+
+```bash
+npm run build
+```
+
+To run the unit tests for the components, run:
+
+```bash
+npm test
+```
