@@ -7,7 +7,8 @@
 Since this is a web component, you can just use directly in your HTML like
 [`this`](https://github.com/vinhnghi223/ui-percentage-bar/blob/master/src/index.html)
 ### Screenshots
-![](https://raw.githubusercontent.com/vinhnghi223/ui-percentage-bar/master/sceenshot.png)
+![](https://raw.githubusercontent.com/vinhnghi223/ui-percentage-bar/master/screenshot.png)
+
 ## Using this component
 
 There are three strategies I recommend for using web components built with Stencil.
