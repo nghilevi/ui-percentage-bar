@@ -1,0 +1,9 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <link rel="modulepreload" href="/build/p-612acc71.js"><script type="module" src="/build/p-612acc71.js" data-stencil data-resources-url="/build/" data-stencil-namespace="ui-percentage-bar"></script> <script nomodule="" src="/build/ui-percentage-bar.js" data-stencil></script> </head> <body> <ui-percentage-bar name="percentageBar"> <script>
+      var percentageBar = document.getElementsByName('percentageBar')[0]
+      var data = [
+        {label: 'instalment', percentage: '94.49', value: 1172.91, color: '#00005e'},
+        {label: 'interest', percentage: '3.98', value: 49.36, color: '#3399FF'},
+        {label: 'fees', percentage: '1.53', value: 19, color: '#704CBF'}
+      ]
+      percentageBar.data = data
+    </script> </ui-percentage-bar></body></html>

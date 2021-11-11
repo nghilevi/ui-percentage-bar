@@ -1,9 +1,9 @@
-import { Component, Prop, h, Host } from '@stencil/core';
-import { GraphElem } from '../../utils/model';
+import { Component, Prop, h } from '@stencil/core';
+import { GraphElem } from '../../global/model';
 
 @Component({
-  tag: 'percentage-bar',
-  styleUrl: 'percentage-bar.css',
+  tag: 'ui-percentage-bar',
+  styleUrl: 'ui-percentage-bar.scss',
   shadow: true
 })
 export class MyComponent {
@@ -18,14 +18,18 @@ export class MyComponent {
               ...graphElem,
               graphStyle: {
                   'flex-grow': graphElem.percentage,
-                  'background-color': graphElem.color,
+                  'background-color': graphElem.color
               },
               legendStyle: {
-                  'background-color': graphElem.color,
+                  'background-color': graphElem.color
               }
           }
       })
     }
+  }
+
+  createTitle(element){
+    return element.label+' - '+ element.percentage+' %'
   }
 
   render() {
@@ -36,26 +40,26 @@ export class MyComponent {
             this.graphData.map((element) => {
               return <div
                       class="horiz-bar__element"
-                      title="{ element.label } - { element.percentage }%"
+                      title={this.createTitle(element)}
                       style={element.graphStyle}
-                    >{element.label}</div>
+                    ></div>
             })
           }
         </div>,
 
-        <div class="horiz-bar-legend ncc-space-top-l">
+        <div class="horiz-bar-legend hb-space-top-l">
           {
             
             this.graphData.map((element) => {
               return <div
-                        class="horiz-bar-legend__element ncc-space-top-s ncc-space-bottom-s"
+                        class="horiz-bar-legend__element hb-space-top-s hb-space-bottom-s"
                       >
                         <div
                             class="horiz-bar-legend__circle"
                             style={element.legendStyle}
                         ></div>
 
-                        <div class="ncc-space-left-s">
+                        <div class="hb-space-left-s">
                           <div>{element.label }: <b>{ element.value }</b></div>
                         </div>
                       </div>

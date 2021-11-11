@@ -1,0 +1,1 @@
+import{p as r,b as a}from"./p-367f8734.js";(()=>{const a=import.meta.url,p={};return""!==a&&(p.resourcesUrl=new URL(".",a).href),r(p)})().then((r=>a([["p-bf5df5bf",[[1,"ui-percentage-bar",{data:[16]}]]]],r)));

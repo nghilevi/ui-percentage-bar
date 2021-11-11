@@ -5,36 +5,36 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { GraphElem } from "./utils/model";
+import { GraphElem } from "./global/model";
 export namespace Components {
-    interface PercentageBar {
+    interface UiPercentageBar {
         "data": GraphElem[];
     }
 }
 declare global {
-    interface HTMLPercentageBarElement extends Components.PercentageBar, HTMLStencilElement {
+    interface HTMLUiPercentageBarElement extends Components.UiPercentageBar, HTMLStencilElement {
     }
-    var HTMLPercentageBarElement: {
-        prototype: HTMLPercentageBarElement;
-        new (): HTMLPercentageBarElement;
+    var HTMLUiPercentageBarElement: {
+        prototype: HTMLUiPercentageBarElement;
+        new (): HTMLUiPercentageBarElement;
     };
     interface HTMLElementTagNameMap {
-        "percentage-bar": HTMLPercentageBarElement;
+        "ui-percentage-bar": HTMLUiPercentageBarElement;
     }
 }
 declare namespace LocalJSX {
-    interface PercentageBar {
+    interface UiPercentageBar {
         "data"?: GraphElem[];
     }
     interface IntrinsicElements {
-        "percentage-bar": PercentageBar;
+        "ui-percentage-bar": UiPercentageBar;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "percentage-bar": LocalJSX.PercentageBar & JSXBase.HTMLAttributes<HTMLPercentageBarElement>;
+            "ui-percentage-bar": LocalJSX.UiPercentageBar & JSXBase.HTMLAttributes<HTMLUiPercentageBarElement>;
         }
     }
 }

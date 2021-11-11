@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { MyComponent } from './percentage-bar';
+import { MyComponent } from './ui-percentage-bar';
 
 describe('my-component', () => {
   it('renders', async () => {
