@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/percentage-bar.esm.js"></script>
+    <script nomodule src="/build/percentage-bar.js"></script>
+  </head>
+  <body>
+    <percentage-bar name="percentageBar"></percentage-bar>
+  </body>
+    <script>
+      var percentageBar = document.getElementsByName('percentageBar')[0]
+      var data = [
+        {label: 'instalment', percentage: '94.49', value: 1172.91, color: '#00005e'},
+        {label: 'interest', percentage: '3.98', value: 49.36, color: '#3399FF'},
+        {label: 'fees', percentage: '1.53', value: 19, color: '#704CBF'}
+      ]
+      percentageBar.data = data
+    </script>
+</html>
