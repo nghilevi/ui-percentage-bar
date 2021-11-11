@@ -6,6 +6,7 @@
 
 Since this is a web component, you can just use directly in your HTML like
 [`this`](https://github.com/vinhnghi223/ui-percentage-bar/blob/master/src/index.html)
+To use it with other framework e.g Angular, React, Vue etc. see [`Framework Integrations`](hhttps://stenciljs.com/docs/overview) from Stencil site.
 
 ![](https://raw.githubusercontent.com/vinhnghi223/ui-percentage-bar/master/screenshot.png)
 
@@ -29,6 +30,9 @@ There are three strategies I recommend for using web components built with Stenc
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ## Development notes
+
+You're welcome to make this component even more flexible, scalable and robust!
+
 ```bash
 npm install
 npm start // run development server serving src/index.html, built component
